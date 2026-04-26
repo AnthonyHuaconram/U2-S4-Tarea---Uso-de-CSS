@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..//CSS/estilos.css">
+    <title>Contacto - Imperio Gamer</title>
+</head>
+
+<body class="wrapper">
+
+    <header>
+        <h1>Imperio Gamer</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="acerca.html">Acerca de nosotros</a>
+            <a href="servicios.html">Servicio</a>
+            <a href="#" class="activo">Contacto</a>
+            <a href="registro.html">Registro</a>
+        </nav>
+    </header>
+
+    <main>
+        <form class="formulario" action="" method="get">
+            <h2>Contáctanos</h2>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" maxlength="30" minlength="5" required
+                placeholder="Escribe tu nombre completo">
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="Escribe tu correo electrónico">
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" min="2026-04-17" max="2026-12-30">
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Escribe tu mensaje aquí"></textarea>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p class="titulo-footer">Patrocinadores</p>
+
+        <div class="patrocinadores">
+            <a href="https://www.playstation.com/es-ec/">PlayStation</a>
+            <a href="https://www.xbox.com/es-ES/">Xbox</a>
+            <a
+                href="https://www.nintendo.com/es-es/?srsltid=AfmBOooShtUYOPIBumaklP5pYDLqvafiqkVS9yZvlRl19SN5_0R9Lsf_">Nintendo</a>
+            <a href="https://store.steampowered.com/?l=spanish">Steam</a>
+        </div>
+
+        <p class="copy">Todos los derechos reservados &copy; 2024</p>
+    </footer>
+
+</body>
+
+</html>
