@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    background-color: black;
+    color: cyan;
+    padding: 15px 10px;
+    text-align: center;
+    box-shadow: 0 0 15px cyan;
+}
+
+header h1 {
+    margin: 0 0 15px 0;
+}
+
+footer {
+    margin-top: auto;
+    font-size: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: cyan;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: yellow;
+    text-shadow: 0 0 10px yellow;
+}
+
+header nav a {
+    font-weight: bold;
+}
+
+.activo {
+    color: yellow;
+    text-shadow: 0 0 10px yellow;
+}
+
+#carrusel {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 12s infinite;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+
+    0%,
+    30% {
+        margin-left: 0;
+    }
+
+    35%,
+    65% {
+        margin-left: -100%;
+    }
+
+    70%,
+    100% {
+        margin-left: -200%;
+    }
+}
+
+main {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px purple;
+    text-align: left;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h2 {
+    color: yellow;
+    text-shadow: 0 0 10px cyan;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: cyan;
+    border-bottom: 2px solid cyan;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: medium;
+    text-align: justify;
+    margin: 10px 0 20px 0;
+    line-height: 1.6;
+}
+
+p,
+li,
+td {
+    font-family: Arial, sans-serif;
+}
+
+.lista-juegos {
+    list-style: square;
+    margin: 20px 0 30px 50px;
+}
+
+.tabla {
+    margin: 30px auto;
+    border-collapse: collapse;
+    border: 3px solid cyan;
+    width: 80%;
+}
+
+.tabla th {
+    background-color: purple;
+}
+
+.tabla th,
+.tabla td {
+    border: 2px solid cyan;
+    padding: 12px;
+    text-align: center;
+}
+
+.imagen-centro {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.formulario {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px cyan;
+}
+
+.formulario label {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    padding: 8px;
+    border: 1px solid cyan;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.radio-group {
+    margin-top: 10px;
+}
+
+.radio-group label {
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.formulario button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: black;
+    color: cyan;
+    border: 2px solid cyan;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.formulario button:hover {
+    background-color: cyan;
+    color: black;
+}
+
+.patrocinadores a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: cyan;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.patrocinadores a:hover {
+    color: yellow;
+    text-shadow: 0 0 10px yellow;
+}
+
+.titulo-footer {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.patrocinadores {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.copy {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid cyan;
+    /* 👈 línea */
+}
+
+footer p {
+    margin: 5px 0;
+}
